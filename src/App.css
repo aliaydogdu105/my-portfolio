@@ -10,8 +10,14 @@
   border-radius: 50%;
 }
 
-div.mainPage {
-  background-image: url(https://media2.giphy.com/media/13bGgH9VnEDsuA/giphy.gif?cid=ecf05e47x1wraozw5q47xuuuzqra9ammh11kh7x9sks5432x&rid=giphy.gif&ct=g);
+.mainPage {
+  background-image: url(https://wallpaperaccess.com/full/662960.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  background-image: url(https://wallpaperaccess.com/full/662960.jpg);
   background-size: cover;
   background-position: center;
 }
