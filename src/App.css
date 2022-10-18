@@ -10,13 +10,10 @@
   border-radius: 50%;
 }
 
-.mainPage {
-  background-image: url(https://wallpaperaccess.com/full/662960.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.contact {
+.mainPage,
+.contact,
+.about,
+.projects {
   background-image: url(https://wallpaperaccess.com/full/662960.jpg);
   background-size: cover;
   background-position: center;
