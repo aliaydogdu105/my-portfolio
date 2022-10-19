@@ -1,18 +1,37 @@
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import movie from "../assests/projectsgif/movie-app.gif";
+import loading from "../assets/loading/loading.gif";
 
-function ProjectCards() {
+const ProjectCards = ({ name, gif, link, codes }) => {
+  const [loaded, setLoaded] = useState(false);
+  const onImageLoaded = () => {
+    setLoaded(true);
+  };
+
   return (
     <Card style={{ width: "20rem" }}>
-      <Card.Img variant="top" src={movie} />
+      <Card.Img
+        variant="top"
+        src={loaded ? `../assets/projectsgif/${gif}.gif` : loading}
+        alt={name}
+        onLoad={onImageLoaded}
+      />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Button variant="primary">Go somewhere</Button>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title>{name}</Card.Title>
+        <Button variant="primary">
+          <a href={codes} target="_blank" rel="noopener noreferrer">
+            Source Codes
+          </a>
+        </Button>
+        <Button variant="danger">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </Button>
       </Card.Body>
     </Card>
   );
-}
+};
 
 export default ProjectCards;

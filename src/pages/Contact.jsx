@@ -1,7 +1,7 @@
 import React from "react";
-import LinkedIn from "../assests/contact/LinkedIn.png";
-import GitHub from "../assests/contact/GitHub.png";
-import Mail from "../assests/contact/Mail.png";
+import LinkedIn from "../assets/contact/LinkedIn.png";
+import GitHub from "../assets/contact/GitHub.png";
+import Mail from "../assets/contact/Mail.png";
 
 const Contact = () => {
   return (
