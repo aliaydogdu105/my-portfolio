@@ -18,3 +18,11 @@
   background-size: cover;
   background-position: center;
 }
+
+.qr {
+  transition: transform 0.2s;
+}
+
+.qr:hover {
+  transform: scale(1.1);
+}
