@@ -10,15 +10,18 @@ const ProjectCards = ({ name, gif, link, codes }) => {
   };
 
   return (
-    <Card style={{ width: "20rem" }}>
-      <Card.Img
-        variant="top"
-        src={loaded ? `../assets/projectsgif/${gif}.gif` : loading}
-        alt={name}
-        onLoad={onImageLoaded}
-      />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
+    <Card className="m-3 col-10 col-sm-4 col-lg-3">
+      <div className="d-flex align-items-center">
+        <Card.Img
+          style={{ width: "100%" }}
+          src={loaded ? `./projectsgif/${gif}.gif` : loading}
+          alt={name}
+          onLoad={onImageLoaded}
+        />
+      </div>
+
+      <Card.Body className="">
+        <Card.Title className="text-center">{name}</Card.Title>
         <Button variant="primary">
           <a href={codes} target="_blank" rel="noopener noreferrer">
             Source Codes
