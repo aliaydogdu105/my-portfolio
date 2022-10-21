@@ -3,7 +3,7 @@ import { data } from "../helpers/data";
 
 const Projects = () => {
   return (
-    <div className="projects d-flex justify-content-center align-items-center flex-wrap vh-150">
+    <div className="projects d-flex justify-content-center align-items-center flex-wrap">
       {data.map((projectcards) => {
         return <ProjectCards key={projectcards.id} {...projectcards} />;
       })}

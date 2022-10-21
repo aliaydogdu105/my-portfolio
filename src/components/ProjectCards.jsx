@@ -10,25 +10,44 @@ const ProjectCards = ({ name, gif, link, codes }) => {
   };
 
   return (
-    <Card className="m-3 col-10 col-sm-4 col-lg-3">
-      <div className="d-flex align-items-center">
+    <Card className="cards bg-warning m-5 p-3 col-10 col-sm-4 col-lg-3">
+      <div className="d-flex align-items-center" style={{ height: "222px" }}>
         <Card.Img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "80%", borderRadius: "0.5rem" }}
           src={loaded ? `./projectsgif/${gif}.gif` : loading}
           alt={name}
           onLoad={onImageLoaded}
         />
       </div>
 
-      <Card.Body className="">
-        <Card.Title className="text-center">{name}</Card.Title>
-        <Button variant="primary">
-          <a href={codes} target="_blank" rel="noopener noreferrer">
-            Source Codes
+      <Card.Body className="h-25">
+        <Card.Title
+          className="text-center"
+          style={{
+            fontSize: "2rem",
+            fontFamily: "cursive",
+            borderTop: "2px solid black",
+          }}
+        >
+          {name}
+        </Card.Title>
+        <Button className="bg-primary w-50">
+          <a
+            className="text-white text-decoration-none"
+            href={codes}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Codes
           </a>
         </Button>
-        <Button variant="danger">
-          <a href={link} target="_blank" rel="noopener noreferrer">
+        <Button className="bg-success w-50">
+          <a
+            className="text-white text-decoration-none"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Link
           </a>
         </Button>
