@@ -28,7 +28,7 @@
 }
 
 .cards {
-  box-shadow: 0.75rem 1rem rgba(113, 26, 26, 0.25);
+  box-shadow: 0.75rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 

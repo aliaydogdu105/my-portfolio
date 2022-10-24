@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo/Logo.gif";
+import DigitalClock from "./DigitalClock";
 
 function MyNavbar() {
   return (
@@ -12,6 +13,7 @@ function MyNavbar() {
           <Navbar.Brand as={NavLink} to="/">
             <img src={logo} alt="Ali" className="logo" />
           </Navbar.Brand>
+          <DigitalClock />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center">
