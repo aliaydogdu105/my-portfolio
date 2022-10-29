@@ -31,25 +31,21 @@ const ProjectCards = ({ name, gif, link, codes }) => {
         >
           {name}
         </Card.Title>
-        <Button className="bg-primary w-50">
-          <a
-            className="text-white text-decoration-none"
-            href={codes}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Codes
-          </a>
+        <Button
+          className="bg-primary w-50"
+          href={codes}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Codes
         </Button>
-        <Button className="bg-success w-50">
-          <a
-            className="text-white text-decoration-none"
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Link
-          </a>
+        <Button
+          className="bg-success w-50"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link
         </Button>
       </Card.Body>
     </Card>
