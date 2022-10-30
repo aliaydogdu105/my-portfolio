@@ -11,8 +11,8 @@ const ProjectCards = ({ name, gif, link, codes }) => {
 
   return (
     <Card
-      className="cards bg-warning m-5 p-3 col-10 col-sm-4 col-lg-3"
-      style={{ width: "20rem", height: "24rem" }}
+      className="cards m-4 p-3 col-10 col-sm-4 col-lg-3"
+      style={{ width: "20rem", height: "24rem", backgroundColor: "#F2CB05" }}
     >
       <div className="d-flex align-items-center" style={{ height: "222px" }}>
         <Card.Img
@@ -35,7 +35,8 @@ const ProjectCards = ({ name, gif, link, codes }) => {
           {name}
         </Card.Title>
         <Button
-          className="bg-primary w-50"
+          className="w-50"
+          style={{ backgroundColor: "#8C55D9", border: "none" }}
           href={codes}
           target="_blank"
           rel="noopener noreferrer"
@@ -43,7 +44,8 @@ const ProjectCards = ({ name, gif, link, codes }) => {
           Codes
         </Button>
         <Button
-          className="bg-success w-50"
+          className="w-50"
+          style={{ backgroundColor: "#038C65", border: "none" }}
           href={link}
           target="_blank"
           rel="noopener noreferrer"

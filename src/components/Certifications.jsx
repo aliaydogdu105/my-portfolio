@@ -12,9 +12,19 @@ const Certifications = ({ name, image, link, organization }) => {
   return (
     <Card
       className="text-center d-flex align-items-center justify-content-center m-3 col-10 col-sm-4 col-lg-3"
-      style={{ width: "20rem", height: "25rem" }}
+      style={{
+        width: "20rem",
+        height: "25rem",
+        boxShadow:
+          "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+        backgroundColor: "#BF9B7A",
+        border: "none",
+      }}
     >
-      <Card.Body className="d-flex bg-warning align-items-center justify-content-center flex-column">
+      <Card.Body
+        className="d-flex align-items-center justify-content-center flex-column"
+        style={{ backgroundColor: "#BF9B7A", borderRadius: "5px" }}
+      >
         <Card.Img
           variant="top"
           style={{ width: "100%", height: "71%", borderRadius: "0.5rem" }}
@@ -32,7 +42,8 @@ const Certifications = ({ name, image, link, organization }) => {
           {name}
         </Card.Title>
         <Button
-          className="bg-success w-50"
+          className="w-50"
+          style={{ backgroundColor: "#185359", border: "none" }}
           href={link}
           target="_blank"
           rel="noopener noreferrer"
@@ -40,7 +51,12 @@ const Certifications = ({ name, image, link, organization }) => {
           Show
         </Button>
       </Card.Body>
-      <Card.Footer className="text-muted w-100">{organization}</Card.Footer>
+      <Card.Footer
+        className="text-muted w-100"
+        style={{ backgroundColor: "#F2E8DF" }}
+      >
+        {organization}
+      </Card.Footer>
     </Card>
   );
 };

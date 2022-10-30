@@ -7,8 +7,7 @@ import { certificate } from "../helpers/certificate";
 const About = () => {
   return (
     <div className="about d-flex justify-content-center align-items-center flex-column">
-      <AboutText />
-      <Skills />
+      <h1>Certifications</h1>
       <div className="projects d-flex justify-content-center align-items-center flex-wrap">
         {certificate.map((certificateData) => {
           return (
@@ -16,6 +15,8 @@ const About = () => {
           );
         })}
       </div>
+      <AboutText />
+      <Skills />
     </div>
   );
 };

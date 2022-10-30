@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 
 const AboutText = () => {
   return (
-    <Card className="text-center m-3" style={{ width: "25rem" }}>
+    <Card className="text-center m-3 w-auto">
       <Card.Body>
         I'm a Software Developer. I’m currently interested front-end
         development; React. My plan is to learn Django and Nodejs for the
