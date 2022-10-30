@@ -10,7 +10,10 @@ const ProjectCards = ({ name, gif, link, codes }) => {
   };
 
   return (
-    <Card className="cards bg-warning m-5 p-3 col-10 col-sm-4 col-lg-3">
+    <Card
+      className="cards bg-warning m-5 p-3 col-10 col-sm-4 col-lg-3"
+      style={{ width: "20rem", height: "24rem" }}
+    >
       <div className="d-flex align-items-center" style={{ height: "222px" }}>
         <Card.Img
           style={{ width: "100%", height: "80%", borderRadius: "0.5rem" }}
@@ -20,7 +23,7 @@ const ProjectCards = ({ name, gif, link, codes }) => {
         />
       </div>
 
-      <Card.Body className="h-25">
+      <Card.Body>
         <Card.Title
           className="text-center"
           style={{
