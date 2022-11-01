@@ -16,7 +16,7 @@ import { AiOutlineConsoleSql } from "react-icons/ai";
 
 function Skills() {
   return (
-    <Card style={{ width: "16rem" }}>
+    <Card className="col-sm-5">
       <Card.Header className="text-center text-decoration-underline fw-bold">
         Languages and Tools
       </Card.Header>

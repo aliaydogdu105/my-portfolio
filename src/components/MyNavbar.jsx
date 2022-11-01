@@ -8,7 +8,14 @@ import DigitalClock from "./DigitalClock";
 function MyNavbar() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="sm">
+      <Navbar
+        className="navbar-fixed-top"
+        sticky="top"
+        collapseOnSelect
+        bg="dark"
+        variant="dark"
+        expand="sm"
+      >
         <Container>
           <Navbar.Brand as={NavLink} to="/">
             <img src={logo} alt="Ali" className="logo" />
@@ -17,13 +24,13 @@ function MyNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center">
-              <Nav.Link as={NavLink} to="/projects">
+              <Nav.Link eventKey="1" as={NavLink} to="/projects">
                 Projects
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/about">
+              <Nav.Link eventKey="2" as={NavLink} to="/about">
                 About
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/contact">
+              <Nav.Link eventKey="3" as={NavLink} to="/contact">
                 Contact
               </Nav.Link>
             </Nav>
