@@ -83,4 +83,11 @@ export const certificate = [
     link: "https://www.sololearn.com/certificates/CT-9YGKRKZE",
     organization: "sololearn",
   },
+  {
+    id: "12",
+    name: "Game Development with JS",
+    image: "game-development-with-JS",
+    link: "https://www.sololearn.com/certificates/CT-EYLZ1B1B",
+    organization: "sololearn",
+  },
 ];
