@@ -15,6 +15,9 @@ function MyNavbar() {
         bg="dark"
         variant="dark"
         expand="sm"
+        style={{
+          borderBottom: "solid 2px black",
+        }}
       >
         <Container>
           <Navbar.Brand as={NavLink} to="/">

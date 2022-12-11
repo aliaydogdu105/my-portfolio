@@ -16,17 +16,14 @@ const Home = () => {
             <h1>
               <strong>Hi, I'm Ali</strong>
             </h1>
-            <h4>
-              I'm a Software Developer. I'm currently interested front-end
-              development with React.
-            </h4>
+            <h4>I'm currently interested front-end development with React.</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={carouselbg} alt="Second slide" />
           <Carousel.Caption className="d-flex flex-column justify-content-center h-100">
             <h4>
-              I'm currently in the process of learning Django and Docker.
+              I'm presently in the process of learning Django and Docker.
               Afterwards, I planned to learn Next.js, Typescript and Node.js.
             </h4>
           </Carousel.Caption>
