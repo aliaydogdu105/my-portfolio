@@ -84,7 +84,7 @@ export const certificate = [
     organization: "sololearn",
   },
   {
-    id: "12",
+    id: "13",
     name: "Game Development with JS",
     image: "game-development-with-JS",
     link: "https://www.sololearn.com/certificates/CT-EYLZ1B1B",

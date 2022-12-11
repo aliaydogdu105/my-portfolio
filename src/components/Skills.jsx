@@ -11,6 +11,7 @@ import {
   SiVisualstudiocode,
   SiFigma,
   SiPython,
+  SiDjango,
 } from "react-icons/si";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 
@@ -59,6 +60,9 @@ function Skills() {
         </ListGroup.Item>
         <ListGroup.Item>
           <AiOutlineConsoleSql /> SQL
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <SiDjango /> Django
         </ListGroup.Item>
       </ListGroup>
     </Card>

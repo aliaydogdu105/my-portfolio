@@ -10,6 +10,10 @@
   border-radius: 50%;
 }
 
+.mainPage {
+  height: 100vh;
+}
+
 .mainPage,
 .contact,
 .about,
@@ -18,6 +22,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  min-height: max-content;
 }
 
 .qr {
