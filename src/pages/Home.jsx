@@ -1,44 +1,116 @@
-import React from "react";
-import { Carousel } from "react-bootstrap";
-import carouselbg from "../assets/carousel/carouselbg.jpg";
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
 
 const Home = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = [
+    "Front-End Developer",
+    "Full-Stack Developer",
+    "Software Developer",
+  ];
+  const period = 2000;
+  console.log(delta);
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
+      console.log(index);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(300);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+
   return (
-    <div className="mainPage d-flex align-items-center flex-column">
-      <Carousel className="m-3 container col-sm-8 ">
-        <Carousel.Item>
-          <img
-            className="d-block img-fluid"
-            src={carouselbg}
-            alt="First slide"
-          />
-          <Carousel.Caption className="d-flex flex-column justify-content-center h-100">
-            <h1>
-              <strong>Hi, I'm Ali</strong>
-            </h1>
-            <h4>I'm currently interested front-end development with React.</h4>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={carouselbg} alt="Second slide" />
-          <Carousel.Caption className="d-flex flex-column justify-content-center h-100">
-            <h4>
-              I'm presently in the process of learning Django and Docker.
-              Afterwards, I planned to learn Next.js, Typescript and Node.js.
-            </h4>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={carouselbg} alt="Third slide" />
-          <Carousel.Caption className="d-flex flex-column justify-content-center h-100">
-            <h4>
-              Ask me any questions you have about front-end development. I'd be
-              glad to help you...
-            </h4>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+    <section className="banner" id="home">
+      <Container>
+        <Row className="align-items-center">
+          <Col xs={12} md={6} xl={7}>
+            <TrackVisibility className="text-white">
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Ali`}</h1>
+                  <h2>
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[ "Front-End Developer" ,"Full-Stack Developer", "Software Developer" ]'
+                    >
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h2>
+                  <p className="text-white">
+                    I'm currently interested front-end development. I'm
+                    presently in the process of learning Django and Docker.
+                    Afterwards, I planned to learn Next.js, Typescript and
+                    Node.js. Ask me any questions you have about front-end
+                    development. I'd be glad to help you...
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }
+                >
+                  <img
+                    className="mx-5 "
+                    src={
+                      "https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695__340.png"
+                    }
+                    alt="Header Img"
+                  />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
 
