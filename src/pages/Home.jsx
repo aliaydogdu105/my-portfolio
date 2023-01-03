@@ -98,7 +98,7 @@ const Home = () => {
                   }
                 >
                   <img
-                    className="mx-5 "
+                    className="mx-5 px-5 "
                     src={
                       "https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695__340.png"
                     }

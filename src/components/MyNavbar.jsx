@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Anchor } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -7,6 +7,7 @@ import logo from "../assets/logo/Logo.gif";
 import DigitalClock from "./DigitalClock";
 
 function MyNavbar() {
+  const [expanded, setExpanded] = useState(false);
   useEffect(() => {
     let url = window.location.href.split("/");
     let target = url[url.length - 1].toLowerCase();
@@ -18,10 +19,11 @@ function MyNavbar() {
       <Navbar
         className="navbar-fixed-top"
         sticky="top"
-        collapseOnSelect
+        variant="dark"
+        expanded={expanded}
         expand="sm"
         style={{
-          backgroundColor: "rgba(0, 0, 0, 0.4)",
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
         }}
       >
         <Container>
@@ -31,6 +33,9 @@ function MyNavbar() {
             onClick={(e) => {
               let home = document.getElementById("home");
               e.preventDefault();
+              setTimeout(() => {
+                setExpanded(false);
+              }, 100);
               home &&
                 home.scrollIntoView({
                   behavior: "smooth",
@@ -42,7 +47,10 @@ function MyNavbar() {
             <img src={logo} alt="Ali" className="logo" />
           </Navbar.Brand>
           <DigitalClock />
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            onClick={() => setExpanded(expanded ? false : "expanded")}
+            aria-controls="basic-navbar-nav"
+          />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center">
               <a
@@ -51,6 +59,9 @@ function MyNavbar() {
                 onClick={(e) => {
                   let projects = document.getElementById("projects");
                   e.preventDefault();
+                  setTimeout(() => {
+                    setExpanded(false);
+                  }, 100);
                   projects &&
                     projects.scrollIntoView({
                       behavior: "smooth",
@@ -67,6 +78,9 @@ function MyNavbar() {
                 onClick={(e) => {
                   let about = document.getElementById("about");
                   e.preventDefault();
+                  setTimeout(() => {
+                    setExpanded(false);
+                  }, 100);
                   about &&
                     about.scrollIntoView({
                       behavior: "smooth",
@@ -83,6 +97,9 @@ function MyNavbar() {
                 onClick={(e) => {
                   let contact = document.getElementById("contact");
                   e.preventDefault();
+                  setTimeout(() => {
+                    setExpanded(false);
+                  }, 100);
                   contact &&
                     contact.scrollIntoView({
                       behavior: "smooth",

@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import BackToTop from "./components/BackToTop";
 import MyNavbar from "./components/MyNavbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -15,6 +16,7 @@ function App() {
         <Projects />
         <About />
         <Contact />
+        <BackToTop />
       </BrowserRouter>
     </div>
   );

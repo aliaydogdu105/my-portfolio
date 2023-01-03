@@ -7,8 +7,11 @@ const Projects = () => {
       className="about d-flex justify-content-center align-items-center flex-column"
       id="projects"
     >
-      <h1 className=" text-white">Projects</h1>
-      <div className="projects d-flex justify-content-center align-items-center flex-wrap">
+      <h1 className=" text-white text-decoration-underline py-5">Projects</h1>
+      <div
+        className="projects d-flex justify-content-center align-items-center flex-wrap "
+        style={{ gap: "90px" }}
+      >
         {data.map((projectcards) => {
           return <ProjectCards key={projectcards.id} {...projectcards} />;
         })}

@@ -11,7 +11,7 @@ const Certifications = ({ name, image, link, organization }) => {
 
   return (
     <Card
-      className="text-center d-flex align-items-center justify-content-center m-3 col-10 col-sm-4 col-lg-3"
+      className="text-center d-flex align-items-center justify-content-center col-10 col-sm-4 col-lg-3"
       style={{
         width: "20rem",
         height: "25rem",
@@ -42,7 +42,7 @@ const Certifications = ({ name, image, link, organization }) => {
           {name}
         </Card.Title>
         <Button
-          className="w-50"
+          className="buttons w-50"
           style={{ backgroundColor: "#185359", border: "none" }}
           href={link}
           target="_blank"

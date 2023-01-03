@@ -11,8 +11,12 @@ const ProjectCards = ({ name, gif, link, codes }) => {
 
   return (
     <Card
-      className="cards m-5 p-3 col-10 col-sm-4 col-lg-3"
-      style={{ width: "20rem", height: "24rem", backgroundColor: "#F2CB05" }}
+      className="cards p-3 "
+      style={{
+        width: "20rem",
+        height: "24rem",
+        backgroundColor: "#f2af05",
+      }}
     >
       <div className="d-flex align-items-center" style={{ height: "222px" }}>
         <Card.Img
@@ -34,24 +38,26 @@ const ProjectCards = ({ name, gif, link, codes }) => {
         >
           {name}
         </Card.Title>
-        <Button
-          className="w-50"
-          style={{ backgroundColor: "#8C55D9", border: "none" }}
-          href={codes}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Codes
-        </Button>
-        <Button
-          className="w-50"
-          style={{ backgroundColor: "#038C65", border: "none" }}
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Link
-        </Button>
+        <div className="d-flex gap-2">
+          <Button
+            className="buttons w-50"
+            style={{ backgroundColor: "#8C55D9", border: "none" }}
+            href={codes}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Codes
+          </Button>
+          <Button
+            className="buttons w-50"
+            style={{ backgroundColor: "#038C65", border: "none" }}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Link
+          </Button>
+        </div>
       </Card.Body>
     </Card>
   );

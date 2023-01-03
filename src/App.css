@@ -30,13 +30,18 @@ body {
 }
 
 .cards {
-  box-shadow: 0.75rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.75rem 0.9rem rgba(204, 203, 203, 0.2);
   transition: all 0.3s ease;
 }
 
 .cards:hover {
   border-radius: 0.5rem;
-  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0.5rem 0.5rem rgba(230, 228, 228, 0.4);
+}
+
+.buttons:hover {
+  opacity: 0.85;
+  scale: 1.01;
 }
 
 .navlinks {

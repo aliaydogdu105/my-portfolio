@@ -6,7 +6,9 @@ import Mail from "../assets/contact/Mail.png";
 const Contact = () => {
   return (
     <div id="contact">
-      <h1 className="text-white text-center my-5">Contact Me</h1>
+      <h1 className="text-white text-center my-5 text-decoration-underline">
+        Contact Me
+      </h1>
       <div className="contact d-flex flex-column flex-sm-row justify-content-center align-items-center">
         <div className="qr col-sm-3 col-5">
           <a
