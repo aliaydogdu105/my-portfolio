@@ -61,51 +61,40 @@ const Home = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility className="text-white">
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Ali`}</h1>
-                  <h2>
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "Front-End Developer" ,"Full-Stack Developer", "Software Developer" ]'
-                    >
-                      <span className="wrap">{text}</span>
+              <div>
+                <h1>{`Hi! I'm Ali`}</h1>
+                <h2>
+                  <span
+                    className="txt-rotate"
+                    dataPeriod="1000"
+                    data-rotate='[ "Front-End Developer" ,"Full-Stack Developer", "Software Developer" ]'
+                  >
+                    <span className="wrap text-success font-monospace">
+                      {text}
                     </span>
-                  </h2>
-                  <p className="text-white">
-                    I'm currently interested full-stack development. I'm
-                    presently in the process of learning Django and Docker.
-                    Afterwards, I planned to learn Next.js, Typescript and
-                    Node.js. Ask me any questions you have about front-end
-                    development. I'd be glad to help you...
-                  </p>
-                </div>
-              )}
+                  </span>
+                </h2>
+                <p className="text-white">
+                  I'm currently interested full-stack development. I'm presently
+                  in the process of learning Django and Docker. Afterwards, I
+                  planned to learn Next.js, Typescript and Node.js. Ask me any
+                  questions you have about front-end development. I'd be glad to
+                  help you...
+                </p>
+              </div>
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
+              <div>
+                <img
+                  className="mx-5 px-5 "
+                  src={
+                    "https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695__340.png"
                   }
-                >
-                  <img
-                    className="mx-5 px-5 "
-                    src={
-                      "https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695__340.png"
-                    }
-                    alt="Header Img"
-                  />
-                </div>
-              )}
+                  alt="Header Img"
+                />
+              </div>
             </TrackVisibility>
           </Col>
         </Row>
