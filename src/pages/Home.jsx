@@ -79,7 +79,7 @@ const Home = () => {
                     </span>
                   </h2>
                   <p className="text-white">
-                    I'm currently interested front-end development. I'm
+                    I'm currently interested full-stack development. I'm
                     presently in the process of learning Django and Docker.
                     Afterwards, I planned to learn Next.js, Typescript and
                     Node.js. Ask me any questions you have about front-end

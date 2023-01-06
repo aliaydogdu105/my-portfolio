@@ -24,6 +24,7 @@ function MyNavbar() {
         expand="sm"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.7)",
+          backdropFilter: "blur(3px)",
         }}
       >
         <Container>
