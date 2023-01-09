@@ -75,11 +75,11 @@ const Home = () => {
                   </span>
                 </h2>
                 <p className="text-white">
-                  I'm currently interested full-stack development. I'm presently
-                  in the process of learning Django and Docker. Afterwards, I
+                  I'm currently interested full-stack web development. I'm
+                  presently in the process of learning Django. Afterwards, I
                   planned to learn Next.js, Typescript and Node.js. Ask me any
-                  questions you have about front-end development. I'd be glad to
-                  help you...
+                  questions you have about React, JavaScript, CSS or Django. I'd
+                  be glad to help you...
                 </p>
               </div>
             </TrackVisibility>

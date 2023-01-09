@@ -26,11 +26,12 @@ const BackToTop = () => {
   return (
     <Button
       onClick={scrollToTop}
+      className="backToTop"
       style={{
         width: "70px",
         height: "70px",
         backgroundColor: "rgba(68, 41, 242, 0.7)",
-        border: "5px solid rgba(39, 147, 242, 0.5) ",
+        border: "1px solid rgba(39, 147, 242, 0.5) ",
         position: "fixed",
         bottom: "5vh",
         borderRadius: "10px",

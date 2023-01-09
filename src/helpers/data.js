@@ -48,4 +48,11 @@ export const data = [
     link: "https://github.com/aliaydogdu105/pokemon-cards_react",
     codes: "https://github.com/aliaydogdu105/pokemon-cards_react",
   },
+  {
+    id: "8",
+    name: "Finance App",
+    gif: "finance-app",
+    link: "https://finance-app-react.netlify.app/",
+    codes: "https://github.com/aliaydogdu105/finance-app_react",
+  },
 ];

@@ -44,6 +44,10 @@ body {
   scale: 1.01;
 }
 
+.backToTop:hover {
+  background: rgba(68, 41, 242) !important;
+}
+
 .navlinks {
   font-size: larger;
 }
