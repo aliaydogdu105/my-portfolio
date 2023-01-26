@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Anchor } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo/Logo.gif";
 import DigitalClock from "./DigitalClock";
 
@@ -14,6 +14,7 @@ function MyNavbar() {
     let element = document.getElementById(target);
     element && element.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
+
   return (
     <>
       <Navbar
@@ -29,8 +30,8 @@ function MyNavbar() {
       >
         <Container>
           <Navbar.Brand
-            as={Anchor}
-            href="/"
+            as={NavLink}
+            to="/"
             onClick={(e) => {
               let home = document.getElementById("home");
               e.preventDefault();
@@ -54,8 +55,8 @@ function MyNavbar() {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center">
-              <a
-                href="/projects"
+              <NavLink
+                to="/projects"
                 className="text-white text-decoration-none navlinks"
                 onClick={(e) => {
                   let projects = document.getElementById("projects");
@@ -72,9 +73,9 @@ function MyNavbar() {
                 }}
               >
                 Projects
-              </a>
-              <a
-                href="/about"
+              </NavLink>
+              <NavLink
+                to="/about"
                 className="text-white text-decoration-none mx-3 navlinks"
                 onClick={(e) => {
                   let about = document.getElementById("about");
@@ -91,9 +92,9 @@ function MyNavbar() {
                 }}
               >
                 About
-              </a>
-              <a
-                href="/"
+              </NavLink>
+              <NavLink
+                to="/contact"
                 className="text-white text-decoration-none navlinks"
                 onClick={(e) => {
                   let contact = document.getElementById("contact");
@@ -110,7 +111,7 @@ function MyNavbar() {
                 }}
               >
                 Contact
-              </a>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -7,7 +7,7 @@ const Projects = () => {
       className="about d-flex justify-content-center align-items-center flex-column"
       id="projects"
     >
-      <h1 className=" text-white text-decoration-underline py-5">Projects</h1>
+      <h1 className=" text-white text-decoration-underline pb-5">Projects</h1>
       <div
         className="projects d-flex justify-content-center align-items-center flex-wrap "
         style={{ gap: "90px" }}

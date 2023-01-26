@@ -88,9 +88,11 @@ const Home = () => {
             <TrackVisibility>
               <div>
                 <img
-                  className="mx-5 px-5 "
+                  className="mt-5 mt-sm-0 px-5 w-100"
                   src={
-                    "https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695__340.png"
+                    // "https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695__340.png"
+                    // "https://i.gifer.com/4AIE.gif"
+                    "https://i.gifer.com/XcFC.gif"
                   }
                   alt="Header Img"
                 />
