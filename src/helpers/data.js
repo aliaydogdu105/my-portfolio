@@ -55,4 +55,11 @@ export const data = [
     link: "https://finance-app-react.netlify.app/",
     codes: "https://github.com/aliaydogdu105/finance-app_react",
   },
+  {
+    id: "9",
+    name: "Space Tourism",
+    gif: "space-tourism",
+    link: "https://space-tourism-react-ali.netlify.app/",
+    codes: "https://github.com/aliaydogdu105/space-tourism",
+  },
 ];
