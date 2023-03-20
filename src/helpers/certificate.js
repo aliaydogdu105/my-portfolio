@@ -38,7 +38,7 @@ export const certificate = [
     id: "6",
     name: "JavaScript",
     image: "JavaScript-clarusway",
-    link: "https://d34lllqo5jm5il.cloudfront.net/en/verify/14011979731638?ref",
+    link: "https://c11n.clarusway.com/en/verify/14011979731638?ref",
     organization: "Clarusway",
   },
   {
@@ -59,7 +59,7 @@ export const certificate = [
     id: "9",
     name: "React",
     image: "React-clarusway",
-    link: "https://d34lllqo5jm5il.cloudfront.net/en/verify/46919411594228?ref",
+    link: "https://c11n.clarusway.com/en/verify/46919411594228?ref",
     organization: "Clarusway",
   },
   {
@@ -80,7 +80,7 @@ export const certificate = [
     id: "12",
     name: "Frontend Developer",
     image: "Frontend-Developer-clarusway",
-    link: "https://d34lllqo5jm5il.cloudfront.net/en/verify/30815763018219?ref",
+    link: "https://c11n.clarusway.com/en/verify/30815763018219?ref",
     organization: "Clarusway",
   },
   {
@@ -96,5 +96,12 @@ export const certificate = [
     image: "game-development-with-JS",
     link: "https://www.sololearn.com/certificates/CT-EYLZ1B1B",
     organization: "sololearn",
+  },
+  {
+    id: "15",
+    name: "Advanced React",
+    image: "Advanced-React-coursera",
+    link: "https://www.coursera.org/account/accomplishments/certificate/YGHWXLCZBBRM",
+    organization: "Meta / coursera",
   },
 ];

@@ -92,7 +92,8 @@ const Home = () => {
                   src={
                     // "https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695__340.png"
                     // "https://i.gifer.com/4AIE.gif"
-                    "https://i.gifer.com/XcFC.gif"
+                    // "https://i.gifer.com/XcFC.gif"
+                    "https://media2.giphy.com/media/fDyLGy8IufImk/giphy.gif?cid=ecf05e47grmm71bjf22e3gdewy6nnxlx7mdssl3v12doq92u&rid=giphy.gif&ct=s"
                   }
                   alt="Header Img"
                 />
