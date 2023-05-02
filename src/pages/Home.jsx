@@ -61,7 +61,7 @@ const Home = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility className="text-white">
-              <div>
+              <div className=" px-2">
                 <h1>{`Hi! I'm Ali`}</h1>
                 <h2>
                   <span
@@ -75,11 +75,7 @@ const Home = () => {
                   </span>
                 </h2>
                 <p className="text-white">
-                  I'm currently interested full-stack web development. I'm
-                  presently in the process of learning Django. Afterwards, I
-                  planned to learn Next.js, Typescript and Node.js. Ask me any
-                  questions you have about React, JavaScript, CSS or Django. I'd
-                  be glad to help you...
+                I'm passionate about full-stack web development, and I enjoy showcasing my projects on Github. I follow new emerging technologies and developments. If you have any questions related to React, Next.js, JavaScript, TypeScript, CSS, or Django, please don't hesitate to ask me. I'm always happy to provide any help or guidance that you need, so feel free to reach out anytime!
                 </p>
               </div>
             </TrackVisibility>
