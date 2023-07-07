@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo/Logo.gif";
 import DigitalClock from "./DigitalClock";
+import "animate.css";
 
 function MyNavbar() {
   const [expanded, setExpanded] = useState(false);
@@ -43,10 +44,14 @@ function MyNavbar() {
                   behavior: "smooth",
                   block: "start",
                 });
-              window.history.pushState("home", "home", "/");
+              window.history.pushState("home", "home", "/"); //{ pathname, search, hash }
             }}
           >
-            <img src={logo} alt="Ali" className="logo" />
+            <img
+              src={logo}
+              alt="Ali"
+              className="logo animate__animated animate__flipInY animate__delay-0.5s"
+            />
           </Navbar.Brand>
           <DigitalClock />
           <Navbar.Toggle
@@ -75,23 +80,23 @@ function MyNavbar() {
                 Projects
               </NavLink>
               <NavLink
-                to="/about"
+                to="/certifications"
                 className="text-white text-decoration-none mx-3 navlinks"
                 onClick={(e) => {
-                  let about = document.getElementById("about");
+                  let certifications = document.getElementById("certifications");
                   e.preventDefault();
                   setTimeout(() => {
                     setExpanded(false);
                   }, 100);
-                  about &&
-                    about.scrollIntoView({
+                  certifications &&
+                  certifications.scrollIntoView({
                       behavior: "smooth",
                       block: "start",
                     });
-                  window.history.pushState("about", "about", "/about");
+                  window.history.pushState("certifications", "certifications", "/certifications");
                 }}
               >
-                About
+                Certifications
               </NavLink>
               <NavLink
                 to="/contact"

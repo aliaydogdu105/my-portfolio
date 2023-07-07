@@ -12,6 +12,8 @@ import {
   SiFigma,
   SiPython,
   SiDjango,
+  SiNextdotjs,
+  SiTypescript,
 } from "react-icons/si";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 
@@ -30,6 +32,9 @@ function Skills() {
         </ListGroup.Item>
         <ListGroup.Item>
           <SiJavascript /> JavaScript
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <SiTypescript /> TypeScript
         </ListGroup.Item>
         <ListGroup.Item>
           <SiReact /> React
@@ -63,6 +68,9 @@ function Skills() {
         </ListGroup.Item>
         <ListGroup.Item>
           <SiDjango /> Django
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <SiNextdotjs /> Next.js
         </ListGroup.Item>
       </ListGroup>
     </Card>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+import "animate.css"
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -62,7 +63,7 @@ const Home = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility className="text-white">
               <div className=" px-2">
-                <h1>{`Hi! I'm Ali`}</h1>
+                <h1 className="animate__animated animate__headShake animate__delay-2s">{`Hi! I'm Ali`}</h1>
                 <h2>
                   <span
                     className="txt-rotate"

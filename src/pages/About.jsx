@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       className="about d-flex justify-content-center align-items-center flex-column"
-      id="about"
+      id="certifications"
     >
       <h2 className=" text-white display-3 my-5 p-2 border border-2 bg-black w-auto text-center" style={{"font-family" : "Audiowide, sans-serif"}}>
         Certifications

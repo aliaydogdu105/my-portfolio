@@ -21,10 +21,18 @@ const DigitalClock = () => {
   });
 
   return (
-    <div className="text-center text-white font-monospace p-1 ">
-      {dayName}
+    <div className="text-center text-white font-monospace p-1">
+      <h5>{dayName}</h5>
       <hr className=" bg-light" />
-      {time.toLocaleTimeString()}
+      <h6
+        className=" text-bg-dark p-1 rounded"
+        style={{
+          opacity:0.7,
+          backdropFilter: "blur(3px)",
+        }}
+      >
+        {time.toLocaleTimeString()}
+      </h6>
     </div>
   );
 };
