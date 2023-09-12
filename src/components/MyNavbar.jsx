@@ -50,7 +50,7 @@ function MyNavbar() {
             <img
               src={logo}
               alt="Ali"
-              className="logo animate__animated animate__flipInY animate__delay-0.5s"
+              className="logo animate__animated animate__flipInY animate__delay-1s"
             />
           </Navbar.Brand>
           <DigitalClock />

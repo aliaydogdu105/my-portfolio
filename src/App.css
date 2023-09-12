@@ -27,8 +27,8 @@ body {
   transition: transform 0.2s;
 }
 
-.qr:hover {
-  transform: scale(0.95);
+.qr:not(:hover) {
+  transform: scale(0.97) !important;
 }
 
 .cards {
@@ -60,7 +60,7 @@ body {
 
 .banner {
   max-width: 100vw;
-  padding-top: 20vh;
+  padding-top: 10vh;
   padding-bottom: 20vh;
   background-position: top center;
   background-size: cover;

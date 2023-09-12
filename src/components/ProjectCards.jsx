@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import loading from "../assets/loading/loading.gif";
+import { motion } from "framer-motion";
 
 const ProjectCards = ({ name, gif, link, codes }) => {
   const [loaded, setLoaded] = useState(false);
@@ -10,8 +11,10 @@ const ProjectCards = ({ name, gif, link, codes }) => {
   };
 
   return (
-    <Card
+    <motion.Card
       className="cards p-3 "
+      initial={{ x: -Math.random() * 10, y: -Math.random() * 10, opacity: 0.7 }}
+      whileInView={{ x: 0, y: 0, opacity: 1 }}
       style={{
         width: "20rem",
         height: "24rem",
@@ -59,7 +62,7 @@ const ProjectCards = ({ name, gif, link, codes }) => {
           </Button>
         </div>
       </Card.Body>
-    </Card>
+    </motion.Card>
   );
 };
 

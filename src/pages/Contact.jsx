@@ -4,9 +4,17 @@ import GitHub from "../assets/contact/GitHub.png";
 import Mail from "../assets/contact/Mail.png";
 
 const Contact = () => {
+  const year = new Date();
+  console.log("yeadfr", year);
   return (
-    <div className="d-flex justify-content-center align-items-center flex-column" id="contact">
-      <h2 className=" text-white display-3 my-5 p-2 border border-2 bg-black w-auto text-center" style={{"font-family" : "Audiowide, sans-serif"}}>
+    <div
+      className="d-flex justify-content-center align-items-center flex-column"
+      id="contact"
+    >
+      <h2
+        className=" text-white display-3 my-5 p-2 border border-2 bg-black w-auto text-center"
+        style={{ "font-family": "Audiowide, sans-serif" }}
+      >
         Contact Me
       </h2>
       <div className="contact d-flex flex-column flex-sm-row justify-content-center align-items-center">
@@ -38,6 +46,11 @@ const Contact = () => {
             <img className="w-100" src={GitHub} alt="GitHub" />
           </a>
         </div>
+      </div>
+      <div>
+        <p>
+          <span>&#10084;</span> {year.getFullYear()}
+        </p>
       </div>
     </div>
   );
