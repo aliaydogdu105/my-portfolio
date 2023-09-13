@@ -25,8 +25,8 @@ function MyNavbar() {
         expanded={expanded}
         expand="sm"
         style={{
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
-          backdropFilter: "blur(3px)",
+          backgroundImage: "linear-gradient(180deg, black 0%, transparent 90%)",
+          backdropFilter: "blur(5px)",
         }}
       >
         <Container>
@@ -59,7 +59,7 @@ function MyNavbar() {
             aria-controls="basic-navbar-nav"
           />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto text-center">
+            <Nav className="ms-auto text-center fw-bold space-left2">
               <NavLink
                 to="/projects"
                 className="text-white text-decoration-none navlinks"
@@ -83,17 +83,22 @@ function MyNavbar() {
                 to="/certifications"
                 className="text-white text-decoration-none mx-3 navlinks"
                 onClick={(e) => {
-                  let certifications = document.getElementById("certifications");
+                  let certifications =
+                    document.getElementById("certifications");
                   e.preventDefault();
                   setTimeout(() => {
                     setExpanded(false);
                   }, 100);
                   certifications &&
-                  certifications.scrollIntoView({
+                    certifications.scrollIntoView({
                       behavior: "smooth",
                       block: "start",
                     });
-                  window.history.pushState("certifications", "certifications", "/certifications");
+                  window.history.pushState(
+                    "certifications",
+                    "certifications",
+                    "/certifications"
+                  );
                 }}
               >
                 Certifications

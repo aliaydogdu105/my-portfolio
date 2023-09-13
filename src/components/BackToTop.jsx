@@ -1,4 +1,3 @@
-import { easeInOut } from "framer-motion";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { SlArrowUp } from "react-icons/sl";

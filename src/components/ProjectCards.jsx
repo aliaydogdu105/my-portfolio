@@ -12,9 +12,13 @@ const ProjectCards = ({ name, gif, link, codes }) => {
 
   return (
     <motion.Card
-      className="cards p-3 "
-      initial={{ x: -Math.random() * 10, y: -Math.random() * 10, opacity: 0.7 }}
+      className="cards p-3"
+      initial={{ x: -Math.random() * 30, y: -Math.random() * 10, opacity: 0.9 }}
       whileInView={{ x: 0, y: 0, opacity: 1 }}
+      transition={{
+        duration: "0.6",
+        delay: "0.3",
+      }}
       style={{
         width: "20rem",
         height: "24rem",
@@ -37,11 +41,13 @@ const ProjectCards = ({ name, gif, link, codes }) => {
             fontSize: "2rem",
             fontFamily: "cursive",
             borderTop: "2px solid black",
+            paddingBottom: "10px",
+            paddingTop: "10px",
           }}
         >
           {name}
         </Card.Title>
-        <div className="d-flex gap-2">
+        <div className="d-flex gap-2 py-2">
           <Button
             className="buttons w-50"
             style={{ backgroundColor: "#8C55D9", border: "none" }}

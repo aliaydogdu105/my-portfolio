@@ -2,6 +2,7 @@ import React from "react";
 import Certifications from "../components/Certifications";
 import Skills from "../components/Skills";
 import { certificate } from "../helpers/certificate";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -9,9 +10,20 @@ const About = () => {
       className="about d-flex justify-content-center align-items-center flex-column"
       id="certifications"
     >
-      <h2 className=" text-white display-3 my-5 p-2 border border-2 bg-black w-auto text-center" style={{"font-family" : "Audiowide, sans-serif"}}>
+      <motion.h2
+        className=" text-white display-3 my-5 p-2 border border-2 bg-black w-auto text-center"
+        style={{ "font-family": "Audiowide, sans-serif" }}
+        initial={{
+          scale: 0.9,
+        }}
+        whileInView={{ scale: 1 }}
+        transition={{
+          duration: "0.9",
+          delay: "0.3",
+        }}
+      >
         Certifications
-      </h2>
+      </motion.h2>
       <div
         className="projects d-flex justify-content-center align-items-center flex-wrap "
         style={{ gap: "90px" }}
