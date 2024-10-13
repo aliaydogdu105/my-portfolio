@@ -43,21 +43,6 @@ const BackToTop = () => {
       }}
     >
       <SlArrowUp size="30px" className="text-light" />
-      {/* <img
-        src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/6a4aeae39e2054b3d9a33cc8e5a05816.svg"
-        alt="back to top"
-      /> */}
-      {/* <svg
-        viewBox="0 0 24 24"
-        width="42"
-        height="42"
-        stroke="#fff"
-        strokeWidth="2.5"
-        fill="none"
-        strokeLinecap="round"
-      >
-        <polyline points="18 15 12 9 6 15"></polyline>
-      </svg> */}
     </Button>
   );
 };

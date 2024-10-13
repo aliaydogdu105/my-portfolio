@@ -1,5 +1,12 @@
 export const data = [
   {
+    id: "0",
+    name: "VocApp",
+    gif: "vocapp",
+    link: "https://vocapp-beta.vercel.app/",
+    codes: "https://github.com/aliaydogdu105/vocapp",
+  },
+  {
     id: "1",
     name: "Ask or Answer",
     gif: "ask-or-answer",
